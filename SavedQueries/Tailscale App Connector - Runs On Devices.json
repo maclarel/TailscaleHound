@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale App Connector - Runs On Devices",
+  "description": "Show which devices app connectors run on",
+  "query": "MATCH p=(app:TS_AppConnector)-[:TS_AppConnectorRunsOn]->(d:TS_Device)\nRETURN p"
+}

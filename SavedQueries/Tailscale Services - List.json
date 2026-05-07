@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Services - List",
+  "description": "List tailnet VIP services",
+  "query": "//NOT TESTED\nMATCH (s:TS_Service) RETURN s"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Targets Exit Nodes",
+  "description": "Show grant rules linked to exit-node-capable devices",
+  "query": "MATCH p=(g:TS_Grant)-[:TS_GrantTargetsExitNode]->(d:TS_Device) RETURN p"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Federated Keys - List",
+  "description": "List tailnet federated keys",
+  "query": "MATCH (k:TS_FederatedKey) RETURN k"
+}

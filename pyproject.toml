@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tailscalehound"
+version = "0.1.0"
+description = "BloodHound OpenGraph collector for Tailscale"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "TailscaleHound contributors" }
+]
+dependencies = [
+  "requests",
+  "python-dotenv",
+  "bhopengraph",
+]
+
+[project.urls]
+Homepage = "https://github.com/KingOfTheNOPs/TailscaleHound"
+Repository = "https://github.com/KingOfTheNOPs/TailscaleHound"
+
+[project.scripts]
+tailscalehound = "tailscalehound:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tailscalehound*"]
+namespaces = true

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Targets App Connectors",
+  "description": "Show grant rules linked directly to app connectors",
+  "query": "MATCH path=(g:TS_Grant)-[:TS_GrantTargetsAppConnector]->(app:TS_AppConnector) RETURN path"
+}

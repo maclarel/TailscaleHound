@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Posture - List",
+  "description": "List posture definitions from the policy",
+  "query": "MATCH (p:TS_Posture) RETURN p"
+}

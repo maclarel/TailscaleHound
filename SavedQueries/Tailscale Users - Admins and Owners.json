@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_User)-[:TS_IsAdminOf|:TS_IsOwnerOf]->(d:TS_Network) return p",
+  "name": "Tailscale Users - Admins and Owners",
+  "description": "Get tailscale admins and owners "
+}

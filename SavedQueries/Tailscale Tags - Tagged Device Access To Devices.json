@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Tags - Tagged Device Access To Devices",
+  "description": "Show tailnet devices whose local tags grant or allow access to target devices",
+  "query": "MATCH p=(src:TS_Device)-[:TS_HasTag]->(tag:TS_Tag)-[:TS_GrantSource|TS_AclSource]->(rule)-[:TS_GrantTargetsDevice|TS_AclTargetsDevice]->(dst)\nRETURN p"
+}

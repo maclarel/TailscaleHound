@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Invites - Device Invites (List)",
+  "description": "List tailnet device invites",
+  "query": "MATCH (i:TS_DeviceInvite) RETURN i"
+}

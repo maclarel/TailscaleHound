@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Routes - Access Via Device [Group Membership]",
+  "description": "Show group membership rule paths to routes and the devices advertising those routes",
+  "query": "MATCH p1=(u:TS_User)-[:TS_IsMemberOf]->(s)-[:TS_AclSource|TS_GrantSource]->(r)-[:TS_AclTargetsRoute|TS_GrantTargetsRoute]->(route:TS_Route)\nMATCH p2=(d:TS_Device)-[:TS_EnabledRoute]->(route)\nRETURN p1, p2"
+}

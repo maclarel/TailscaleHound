@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Hybrid - AZUser Groups",
+  "description": "Map AZUser to Tailscale group memberships",
+  "query": "MATCH a=((az:AZUser)-[:TS_AZUserSyncedToUser]->(u:TS_User)-[:TS_IsMemberOf]->(g:TS_Group))\nRETURN a"
+}

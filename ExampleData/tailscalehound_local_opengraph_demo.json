@@ -1,0 +1,4354 @@
+{
+  "metadata": {
+    "source_kind": "TS_Base"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "onepiece_ts-network_straw-hat-local",
+        "kinds": [
+          "TS_Network",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "straw-hat.local",
+          "TailnetName": "straw-hat.local",
+          "MagicDNSSuffix": "tailgrandline.ts.net",
+          "MagicDNSEnabled": true,
+          "Version": "1.96.4-onepiece-demo",
+          "BackendState": "Running"
+        }
+      },
+      {
+        "id": "onepiece_ts-group_group-straw-hats",
+        "kinds": [
+          "TS_Group",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "group:straw-hats",
+          "GroupName": "group:straw-hats",
+          "Members": [
+            "monkey.d.luffy@straw-hat.local",
+            "nami@straw-hat.local"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-group_group-navigators",
+        "kinds": [
+          "TS_Group",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "group:navigators",
+          "GroupName": "group:navigators",
+          "Members": [
+            "nami@straw-hat.local",
+            "roronoa.zoro@straw-hat.local"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-group_group-grand-line-operators",
+        "kinds": [
+          "TS_Group",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "group:grand-line-operators",
+          "GroupName": "group:grand-line-operators",
+          "Members": [
+            "roronoa.zoro@straw-hat.local",
+            "sanji@straw-hat.local"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-tag_tag-thousand-sunny",
+        "kinds": [
+          "TS_Tag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:thousand-sunny",
+          "TagName": "tag:thousand-sunny",
+          "Owners": [
+            "autogroup:admin"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-tag_tag-reverse-mountain",
+        "kinds": [
+          "TS_Tag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:reverse-mountain",
+          "TagName": "tag:reverse-mountain",
+          "Owners": [
+            "autogroup:admin"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-tag_tag-poneglyph",
+        "kinds": [
+          "TS_Tag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:poneglyph",
+          "TagName": "tag:poneglyph",
+          "Owners": [
+            "autogroup:admin"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-tag_tag-news-coo",
+        "kinds": [
+          "TS_Tag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:news-coo",
+          "TagName": "tag:news-coo",
+          "Owners": [
+            "group:grand-line-operators"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-tag_tag-sea-stone",
+        "kinds": [
+          "TS_Tag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:sea-stone",
+          "TagName": "tag:sea-stone",
+          "Owners": [
+            "autogroup:admin"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-tag_tag-going-merry",
+        "kinds": [
+          "TS_Tag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:going-merry",
+          "TagName": "tag:going-merry",
+          "Owners": [
+            "group:grand-line-operators"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-tag_tag-devil-fruit",
+        "kinds": [
+          "TS_Tag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:devil-fruit",
+          "TagName": "tag:devil-fruit",
+          "Owners": [
+            "autogroup:admin"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-autogroup_autogroup-admin",
+        "kinds": [
+          "TS_AutoGroup",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "autogroup:admin",
+          "AutoGroup": "autogroup:admin"
+        }
+      },
+      {
+        "id": "onepiece_ts-autogroup_autogroup-internet",
+        "kinds": [
+          "TS_AutoGroup",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "autogroup:internet",
+          "AutoGroup": "autogroup:internet"
+        }
+      },
+      {
+        "id": "onepiece_ts-autogroup_autogroup-member",
+        "kinds": [
+          "TS_AutoGroup",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "autogroup:member",
+          "AutoGroup": "autogroup:member"
+        }
+      },
+      {
+        "id": "onepiece_ts-autogroup_autogroup-self",
+        "kinds": [
+          "TS_AutoGroup",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "autogroup:self",
+          "AutoGroup": "autogroup:self"
+        }
+      },
+      {
+        "id": "onepiece_ts-cidr_0-0-0-0-0",
+        "kinds": [
+          "TS_Cidr",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "0.0.0.0/0",
+          "CIDR": "0.0.0.0/0"
+        }
+      },
+      {
+        "id": "onepiece_ts-cidr_10-20-5-0-0",
+        "kinds": [
+          "TS_Cidr",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "10.20.5.0/0",
+          "CIDR": "10.20.5.0/0"
+        }
+      },
+      {
+        "id": "onepiece_ts-portspec_wildcard",
+        "kinds": [
+          "TS_PortSpec",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "*",
+          "PortSpec": "*"
+        }
+      },
+      {
+        "id": "onepiece_ts-portspec_8006",
+        "kinds": [
+          "TS_PortSpec",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "8006",
+          "PortSpec": "8006"
+        }
+      },
+      {
+        "id": "onepiece_ts-portspec_tcp-80",
+        "kinds": [
+          "TS_PortSpec",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tcp:80",
+          "PortSpec": "tcp:80"
+        }
+      },
+      {
+        "id": "onepiece_ts-wildcard_any",
+        "kinds": [
+          "TS_Wildcard",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "*",
+          "Wildcard": "*"
+        }
+      },
+      {
+        "id": "onepiece_ts-sshuser_autogroup-nonroot",
+        "kinds": [
+          "TS_SSHUser",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "autogroup:nonroot",
+          "SshUser": "autogroup:nonroot"
+        }
+      },
+      {
+        "id": "onepiece_ts-sshuser_root",
+        "kinds": [
+          "TS_SSHUser",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "root",
+          "SshUser": "root"
+        }
+      },
+      {
+        "id": "onepiece_ts-attr_funnel",
+        "kinds": [
+          "TS_Attr",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "funnel",
+          "Attr": "funnel"
+        }
+      },
+      {
+        "id": "onepiece_ts-ipset_ipset-grand-line-lab",
+        "kinds": [
+          "TS_IPSet",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "ipset:grand-line-lab",
+          "IPSetName": "ipset:grand-line-lab",
+          "Routes": [
+            "10.20.3.0/24"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-posture_posture-anysunnylinux",
+        "kinds": [
+          "TS_Posture",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "posture:anySunnyLinux",
+          "PostureName": "posture:anySunnyLinux",
+          "Expressions": [
+            "node:os == 'macos'"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-posture_posture-anyclimatactmac",
+        "kinds": [
+          "TS_Posture",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "posture:anyClimatactMac",
+          "PostureName": "posture:anyClimatactMac",
+          "Expressions": [
+            "node:os == 'windows'"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-posture_posture-anydendenmushiios",
+        "kinds": [
+          "TS_Posture",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "posture:anyDenDenMushiIOS",
+          "PostureName": "posture:anyDenDenMushiIOS",
+          "Expressions": [
+            "node:os == 'ios'"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-posture_posture-anyseastonewindows",
+        "kinds": [
+          "TS_Posture",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "posture:anySeaStoneWindows",
+          "PostureName": "posture:anySeaStoneWindows",
+          "Expressions": [
+            "node:os == 'linux'"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-posture_posture-captainslogpose",
+        "kinds": [
+          "TS_Posture",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "posture:captainsLogPose",
+          "PostureName": "posture:captainsLogPose",
+          "Expressions": [
+            "node:os == 'macos'"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-defaultsrcposture_default",
+        "kinds": [
+          "TS_DefaultSrcPosture",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "default-src-posture",
+          "DefaultSrcPosture": [
+            "posture:captainsLogPose",
+            "posture:anySeaStoneWindows",
+            "posture:anyDenDenMushiIOS",
+            "posture:anyClimatactMac"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-autoapproverexitnode_exit-node",
+        "kinds": [
+          "TS_AutoApproverExitNode",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "auto-approver-exit-node",
+          "AutoApproverType": "exitNode",
+          "Approvers": [
+            "autogroup:admin"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-autoapproverroute_0-0-0-0-0",
+        "kinds": [
+          "TS_AutoApproverRoute",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "auto-approver-route-0.0.0.0/0",
+          "AutoApproverType": "route",
+          "Route": "0.0.0.0/0",
+          "Approvers": [
+            "tag:sea-stone",
+            "group:grand-line-operators",
+            "roronoa.zoro@straw-hat.local"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-autoapproverroute_10-20-5-0-0",
+        "kinds": [
+          "TS_AutoApproverRoute",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "auto-approver-route-10.20.5.0/0",
+          "AutoApproverType": "route",
+          "Route": "10.20.5.0/0",
+          "Approvers": [
+            "tag:sea-stone",
+            "group:grand-line-operators",
+            "roronoa.zoro@straw-hat.local"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-hostalias_poneglyph-vault",
+        "kinds": [
+          "TS_HostAlias",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "poneglyph-vault",
+          "HostAlias": "poneglyph-vault",
+          "Targets": [
+            "100.64.10.16"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-acltest_1",
+        "kinds": [
+          "TS_ACLTest",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "acltest-1",
+          "Index": 1,
+          "Src": "monkey.d.luffy@straw-hat.local",
+          "Deny": [
+            "100.64.10.18:8006"
+          ],
+          "Proto": "tcp"
+        }
+      },
+      {
+        "id": "onepiece_ts-sshtest_1",
+        "kinds": [
+          "TS_SSHTest",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "sshtest-1",
+          "Index": 1,
+          "Src": "roronoa.zoro@straw-hat.local",
+          "Dst": [
+            "tag:sea-stone"
+          ],
+          "Check": [
+            "root",
+            "autogroup:nonroot"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-appconnector_news-coo",
+        "kinds": [
+          "TS_AppConnector",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "news-coo",
+          "AppConnectorName": "news-coo",
+          "connectors": [
+            "tag:news-coo"
+          ],
+          "domains": [
+            "world-economy.example",
+            "*.world-economy.example"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-grant_1",
+        "kinds": [
+          "TS_Grant",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "grant-1",
+          "Index": 1,
+          "Src": [
+            "group:straw-hats"
+          ],
+          "Dst": [
+            "*"
+          ],
+          "IP": [
+            "*"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-grant_2",
+        "kinds": [
+          "TS_Grant",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "grant-2",
+          "Index": 2,
+          "Src": [
+            "group:grand-line-operators"
+          ],
+          "Dst": [
+            "*"
+          ],
+          "IP": [
+            "*"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-grant_3",
+        "kinds": [
+          "TS_Grant",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "grant-3",
+          "Index": 3,
+          "Src": [
+            "group:navigators"
+          ],
+          "Dst": [
+            "tag:reverse-mountain"
+          ],
+          "IP": [
+            "tcp:80"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-grant_4",
+        "kinds": [
+          "TS_Grant",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "grant-4",
+          "Index": 4,
+          "Src": [
+            "group:grand-line-operators"
+          ],
+          "Dst": [
+            "autogroup:internet"
+          ],
+          "IP": [
+            "*"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-grant_5",
+        "kinds": [
+          "TS_Grant",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "grant-5",
+          "Index": 5,
+          "Src": [
+            "tag:going-merry"
+          ],
+          "Dst": [
+            "ipset:grand-line-lab"
+          ],
+          "IP": [
+            "*"
+          ],
+          "Via": [
+            "tag:going-merry"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-grant_6",
+        "kinds": [
+          "TS_Grant",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "grant-6",
+          "Index": 6,
+          "Src": [
+            "tag:devil-fruit"
+          ],
+          "Dst": [
+            "tag:reverse-mountain"
+          ],
+          "IP": [
+            "*"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-acl_1",
+        "kinds": [
+          "TS_ACL",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "acl-1",
+          "Index": 1,
+          "Action": "accept",
+          "Src": [
+            "autogroup:member"
+          ],
+          "Dst": [
+            "autogroup:internet:*"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-sshrule_1",
+        "kinds": [
+          "TS_SSHRule",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "sshrule-1",
+          "Index": 1,
+          "Action": "check",
+          "Src": [
+            "roronoa.zoro@straw-hat.local"
+          ],
+          "Dst": [
+            "autogroup:self"
+          ],
+          "Users": [
+            "autogroup:nonroot",
+            "root"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-sshrule_2",
+        "kinds": [
+          "TS_SSHRule",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "sshrule-2",
+          "Index": 2,
+          "Action": "check",
+          "Src": [
+            "roronoa.zoro@straw-hat.local"
+          ],
+          "Dst": [
+            "tag:sea-stone"
+          ],
+          "Users": [
+            "autogroup:nonroot",
+            "root"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-sshrule_3",
+        "kinds": [
+          "TS_SSHRule",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "sshrule-3",
+          "Index": 3,
+          "Action": "check",
+          "Src": [
+            "roronoa.zoro@straw-hat.local"
+          ],
+          "Dst": [
+            "tag:reverse-mountain"
+          ],
+          "Users": [
+            "autogroup:nonroot",
+            "root"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-nodeattr_1",
+        "kinds": [
+          "TS_NodeAttr",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "nodeattr-1",
+          "Index": 1,
+          "Target": [
+            "autogroup:member"
+          ],
+          "Attr": [
+            "funnel"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-nodeattr_2",
+        "kinds": [
+          "TS_NodeAttr",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "nodeattr-2",
+          "Index": 2,
+          "Target": [
+            "100.64.10.13"
+          ],
+          "Attr": [
+            "funnel"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-nodeattr_3",
+        "kinds": [
+          "TS_NodeAttr",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "nodeattr-3",
+          "Index": 3,
+          "Target": [
+            "*"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-user_monkey-d-luffy",
+        "kinds": [
+          "TS_User",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "monkey.d.luffy@straw-hat.local",
+          "ID": 1100000000000001,
+          "LoginName": "monkey.d.luffy@straw-hat.local",
+          "DisplayName": "Monkey D. Luffy",
+          "ProfilePicURL": "https://example.com/avatar/monkey-d-luffy.png",
+          "IsExternal": false
+        }
+      },
+      {
+        "id": "onepiece_ts-user_nami",
+        "kinds": [
+          "TS_User",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "nami@straw-hat.local",
+          "ID": 1100000000000002,
+          "LoginName": "nami@straw-hat.local",
+          "DisplayName": "Nami",
+          "ProfilePicURL": "https://example.com/avatar/nami.png"
+        }
+      },
+      {
+        "id": "onepiece_ts-externaluser_trafalgar-law",
+        "kinds": [
+          "TS_ExternalUser",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "trafalgar.law@heart-pirates.example",
+          "ID": 2100000000000001,
+          "LoginName": "trafalgar.law@heart-pirates.example",
+          "DisplayName": "Trafalgar Law",
+          "ProfilePicURL": "https://example.com/avatar/trafalgar-law.png",
+          "IsExternal": true
+        }
+      },
+      {
+        "id": "onepiece_ts-user_roronoa-zoro",
+        "kinds": [
+          "TS_User",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "roronoa.zoro@straw-hat.local",
+          "ID": 1100000000000003,
+          "LoginName": "roronoa.zoro@straw-hat.local",
+          "DisplayName": "Roronoa Zoro",
+          "ProfilePicURL": "https://example.com/avatar/roronoa-zoro.png",
+          "IsExternal": false
+        }
+      },
+      {
+        "id": "onepiece_ts-device_thousand-sunny",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "thousand-sunny",
+          "HostName": "thousand-sunny",
+          "DNSName": "thousand-sunny.tailgrandline.ts.net.",
+          "OS": "linux",
+          "Online": true,
+          "PrimaryIP": "100.64.10.20",
+          "TailscaleIPs": [
+            "100.64.10.20",
+            "fd7a:115c:a1e0::e87d"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "SelfNode": true,
+          "Created": "2026-02-02T21:39:04.36805612Z",
+          "LastSeen": "0001-01-01T00:00:00Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-08-01T21:39:04Z",
+          "FQDN": "thousand-sunny.tailgrandline.ts.net",
+          "StableID": "op-node-001",
+          "AllowedIPs": [
+            "100.64.10.20/32",
+            "fd7a:115c:a1e0::e87d/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Addrs": [
+            "10.20.0.7:1249",
+            "10.20.0.7:41641",
+            "10.20.0.8:41641"
+          ],
+          "Capabilities": [
+            "HTTPS://TAILSCALE.COM/s/DEPRECATED-NODE-CAPS#see-https://github.com/tailscale/tailscale/issues/11508",
+            "default-auto-update",
+            "funnel",
+            "https",
+            "https://tailscale.com/cap/file-sharing",
+            "https://tailscale.com/cap/funnel-ports?ports=443,8443,10000",
+            "https://tailscale.com/cap/is-admin",
+            "https://tailscale.com/cap/is-owner",
+            "https://tailscale.com/cap/ssh",
+            "https://tailscale.com/cap/tailnet-lock",
+            "probe-udp-lifetime",
+            "ssh-behavior-v1",
+            "ssh-env-vars",
+            "store-appc-routes",
+            "tailnet-display-name",
+            "tailscale.com/app-connectors"
+          ],
+          "CapMap": "{\"default-auto-update\": [true], \"funnel\": null, \"https\": null, \"https://tailscale.com/cap/file-sharing\": null, \"https://tailscale.com/cap/funnel-ports?ports=443,8443,10000\": null, \"https://tailscale.com/cap/is-admin\": null, \"https://tailscale.com/cap/is-owner\": null, \"https://tailscale.com/cap/ssh\": null, \"https://tailscale.com/cap/tailnet-lock\": null, \"probe-udp-lifetime\": null, \"ssh-behavior-v1\": null, \"ssh-env-vars\": null, \"store-appc-routes\": null, \"tailnet-display-name\": [\"straw hat tailnet\"], \"tailscale.com/app-connectors\": [{\"connectors\": [\"tag:news-coo\"], \"domains\": [\"world-economy.example\", \"*.world-economy.example\"], \"name\": \"news-coo\"}]}",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": false,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_going-merry",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "going-merry",
+          "HostName": "going-merry",
+          "DNSName": "going-merry.tailgrandline.ts.net.",
+          "OS": "linux",
+          "Online": true,
+          "PrimaryIP": "100.64.10.23",
+          "TailscaleIPs": [
+            "100.64.10.23",
+            "fd7a:115c:a1e0::90bc"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": true,
+          "Created": "2026-01-20T15:20:45.498639223Z",
+          "LastSeen": "0001-01-01T00:00:00Z",
+          "LastWrite": "2026-05-03T07:17:17.826938636Z",
+          "LastHandshake": "2026-05-06T17:20:23.997681531Z",
+          "FQDN": "going-merry.tailgrandline.ts.net",
+          "StableID": "op-node-002",
+          "AllowedIPs": [
+            "100.64.10.23/32",
+            "fd7a:115c:a1e0::90bc/128",
+            "10.20.9.0/24",
+            "0.0.0.0/0",
+            "10.20.10.0/0",
+            "10.20.11.0/128"
+          ],
+          "Router": true,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Tags": [
+            "tag:thousand-sunny",
+            "tag:reverse-mountain",
+            "tag:poneglyph",
+            "tag:going-merry"
+          ],
+          "PrimaryRoutes": [
+            "100.64.10.12/32",
+            "10.20.3.0/24",
+            "10.20.0.6/128"
+          ],
+          "CapMap": "{\"suggest-exit-node\": []}",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": true,
+          "RxBytes": 3213228,
+          "TxBytes": 733260
+        }
+      },
+      {
+        "id": "onepiece_ts-device_enies-lobby",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "enies-lobby",
+          "HostName": "enies-lobby",
+          "DNSName": "enies-lobby.tailgrandline.ts.net.",
+          "OS": "linux",
+          "Online": true,
+          "PrimaryIP": "100.64.10.27",
+          "TailscaleIPs": [
+            "100.64.10.27",
+            "fd7a:115c:a1e0::d07a"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-05-06T16:52:13.847302422Z",
+          "LastSeen": "0001-01-01T00:00:00Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-11-02T16:52:13Z",
+          "FQDN": "enies-lobby.tailgrandline.ts.net",
+          "StableID": "op-node-003",
+          "AllowedIPs": [
+            "100.64.10.27/32",
+            "fd7a:115c:a1e0::d07a/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_log-pose",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "log-pose",
+          "HostName": "log-pose",
+          "DNSName": "log-pose.tailgrandline.ts.net.",
+          "OS": "macOS",
+          "Online": false,
+          "PrimaryIP": "100.64.10.30",
+          "TailscaleIPs": [
+            "100.64.10.30",
+            "fd7a:115c:a1e0::6c70"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-01-20T14:48:32.435030073Z",
+          "LastSeen": "2026-04-28T17:00:17.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-07-19T14:48:32Z",
+          "FQDN": "log-pose.tailgrandline.ts.net",
+          "StableID": "op-node-004",
+          "AllowedIPs": [
+            "100.64.10.30/32",
+            "fd7a:115c:a1e0::6c70/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_climatact-tablet",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "climatact-tablet",
+          "HostName": "climatact-tablet",
+          "DNSName": "climatact-tablet.tailgrandline.ts.net.",
+          "OS": "iOS",
+          "Online": false,
+          "PrimaryIP": "100.64.10.33",
+          "TailscaleIPs": [
+            "100.64.10.33",
+            "fd7a:115c:a1e0::958f"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-01-20T15:39:14.25158932Z",
+          "LastSeen": "2026-01-31T14:02:59.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-07-19T15:39:14Z",
+          "FQDN": "climatact-tablet.tailgrandline.ts.net",
+          "StableID": "op-node-005",
+          "AllowedIPs": [
+            "100.64.10.33/32",
+            "fd7a:115c:a1e0::958f/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_franky-lab",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "franky-lab",
+          "HostName": "franky-lab",
+          "DNSName": "franky-lab.tailgrandline.ts.net.",
+          "OS": "iOS",
+          "Online": true,
+          "PrimaryIP": "100.64.10.36",
+          "TailscaleIPs": [
+            "100.64.10.36",
+            "fd7a:115c:a1e0::811e"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-01-25T04:03:54.301725988Z",
+          "LastSeen": "2026-05-06T11:33:02.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-07-24T05:49:47Z",
+          "FQDN": "franky-lab.tailgrandline.ts.net",
+          "StableID": "op-node-006",
+          "AllowedIPs": [
+            "100.64.10.36/32",
+            "fd7a:115c:a1e0::811e/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_drum-island",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "drum-island",
+          "HostName": "drum-island",
+          "DNSName": "drum-island.tailgrandline.ts.net.",
+          "OS": "windows",
+          "Online": false,
+          "PrimaryIP": "100.64.10.39",
+          "TailscaleIPs": [
+            "100.64.10.39",
+            "fd7a:115c:a1e0::23ae"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-01-21T01:03:07.36012533Z",
+          "LastSeen": "2026-01-28T11:31:44.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-07-20T01:03:07Z",
+          "FQDN": "drum-island.tailgrandline.ts.net",
+          "StableID": "op-node-007",
+          "AllowedIPs": [
+            "100.64.10.39/32",
+            "fd7a:115c:a1e0::23ae/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_baratie",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "baratie",
+          "HostName": "baratie",
+          "DNSName": "baratie.tailgrandline.ts.net.",
+          "OS": "windows",
+          "Online": false,
+          "PrimaryIP": "100.64.10.42",
+          "TailscaleIPs": [
+            "100.64.10.42",
+            "fd7a:115c:a1e0::1531"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-02-02T19:15:31.748928671Z",
+          "LastSeen": "2026-03-31T19:52:07.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-08-01T19:15:31Z",
+          "FQDN": "baratie.tailgrandline.ts.net",
+          "StableID": "op-node-008",
+          "AllowedIPs": [
+            "100.64.10.42/32",
+            "fd7a:115c:a1e0::1531/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "den",
+          "Tags": [
+            "tag:going-merry"
+          ],
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_sabaody",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "sabaody",
+          "HostName": "sabaody",
+          "DNSName": "sabaody.tailgrandline.ts.net.",
+          "OS": "linux",
+          "Online": true,
+          "PrimaryIP": "100.64.10.45",
+          "TailscaleIPs": [
+            "100.64.10.45",
+            "fd7a:115c:a1e0::4e16"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-05-06T16:38:08.147257742Z",
+          "LastSeen": "0001-01-01T00:00:00Z",
+          "LastWrite": "2026-05-03T06:36:00.798826009Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "FQDN": "sabaody.tailgrandline.ts.net",
+          "StableID": "op-node-009",
+          "AllowedIPs": [
+            "100.64.10.45/32",
+            "fd7a:115c:a1e0::4e16/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Tags": [
+            "tag:devil-fruit"
+          ],
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_skypiea",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "skypiea",
+          "HostName": "skypiea",
+          "DNSName": "skypiea.tailgrandline.ts.net.",
+          "OS": "linux",
+          "Online": true,
+          "PrimaryIP": "100.64.10.48",
+          "TailscaleIPs": [
+            "100.64.10.48",
+            "fd7a:115c:a1e0::0a15"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-01-30T03:17:07.360406453Z",
+          "LastSeen": "0001-01-01T00:00:00Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-07-29T03:17:07Z",
+          "FQDN": "skypiea.tailgrandline.ts.net",
+          "StableID": "op-node-010",
+          "AllowedIPs": [
+            "100.64.10.48/32",
+            "fd7a:115c:a1e0::0a15/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "lax",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-externaldevice_thousand-sunny-1",
+        "kinds": [
+          "TS_ExternalDevice",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "thousand-sunny",
+          "HostName": "thousand-sunny",
+          "DNSName": "thousand-sunny.tailalabasta.ts.net.",
+          "OS": "linux",
+          "Online": true,
+          "PrimaryIP": "100.64.10.51",
+          "TailscaleIPs": [
+            "100.64.10.51",
+            "fd7a:115c:a1e0::8272"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-03-02T22:28:23.017695928Z",
+          "LastSeen": "0001-01-01T00:00:00Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-08-29T22:28:23Z",
+          "FQDN": "thousand-sunny.tailalabasta.ts.net",
+          "StableID": "op-external-node-001",
+          "AllowedIPs": [
+            "100.64.10.51/32",
+            "fd7a:115c:a1e0::8272/128"
+          ],
+          "Router": false,
+          "IsExternal": true,
+          "Relay": "iad",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0,
+          "Tags": [
+            "tag:going-merry"
+          ]
+        }
+      },
+      {
+        "id": "onepiece_ts-device_impel-down",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "impel-down",
+          "HostName": "impel-down",
+          "DNSName": "impel-down.tailgrandline.ts.net.",
+          "OS": "windows",
+          "Online": false,
+          "PrimaryIP": "100.64.10.54",
+          "TailscaleIPs": [
+            "100.64.10.54",
+            "fd7a:115c:a1e0::a5a2"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-03-31T22:48:03.380695132Z",
+          "LastSeen": "2026-03-31T23:19:53.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-09-27T22:48:03Z",
+          "FQDN": "impel-down.tailgrandline.ts.net",
+          "StableID": "op-node-011",
+          "AllowedIPs": [
+            "100.64.10.54/32",
+            "fd7a:115c:a1e0::a5a2/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-externaldevice_going-merry-2",
+        "kinds": [
+          "TS_ExternalDevice",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "going-merry",
+          "HostName": "going-merry",
+          "DNSName": "going-merry.tailwano.ts.net.",
+          "OS": "linux",
+          "Online": false,
+          "PrimaryIP": "100.64.10.57",
+          "TailscaleIPs": [
+            "100.64.10.57",
+            "fd7a:115c:a1e0::3799"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2025-03-30T17:42:22.799776156Z",
+          "LastSeen": "2026-03-27T18:50:00.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-04-06T15:44:36Z",
+          "FQDN": "going-merry.tailwano.ts.net",
+          "StableID": "op-external-node-002",
+          "AllowedIPs": [
+            "100.64.10.57/32",
+            "fd7a:115c:a1e0::3799/128"
+          ],
+          "Router": false,
+          "IsExternal": true,
+          "Tags": [
+            "tag:going-merry"
+          ],
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_water-seven",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "water-seven",
+          "HostName": "water-seven",
+          "DNSName": "water-seven.tailgrandline.ts.net.",
+          "OS": "windows",
+          "Online": false,
+          "PrimaryIP": "100.64.10.60",
+          "TailscaleIPs": [
+            "100.64.10.60",
+            "fd7a:115c:a1e0::a0b5"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-02-03T16:41:52.410275209Z",
+          "LastSeen": "2026-03-31T20:55:54.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-08-02T16:41:52Z",
+          "FQDN": "water-seven.tailgrandline.ts.net",
+          "StableID": "op-node-012",
+          "AllowedIPs": [
+            "100.64.10.60/32",
+            "fd7a:115c:a1e0::a0b5/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_wano-relay",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "wano-relay",
+          "HostName": "wano-relay",
+          "DNSName": "wano-relay.tailgrandline.ts.net.",
+          "OS": "linux",
+          "Online": true,
+          "PrimaryIP": "100.64.10.18",
+          "TailscaleIPs": [
+            "100.64.10.18",
+            "fd7a:115c:a1e0::2810"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": true,
+          "Created": "2026-01-20T14:19:50.521098568Z",
+          "LastSeen": "0001-01-01T00:00:00Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "FQDN": "wano-relay.tailgrandline.ts.net",
+          "StableID": "op-node-013",
+          "AllowedIPs": [
+            "100.64.10.18/32",
+            "fd7a:115c:a1e0::2810/128",
+            "10.20.12.0/24",
+            "10.20.13.0/24",
+            "0.0.0.0/0",
+            "10.20.10.0/0",
+            "10.20.0.14/32",
+            "10.20.0.15/32",
+            "10.20.0.16/32"
+          ],
+          "Router": true,
+          "IsExternal": false,
+          "Relay": "iad",
+          "Tags": [
+            "tag:sea-stone"
+          ],
+          "PrimaryRoutes": [
+            "203.0.113.1/32",
+            "203.0.113.2/32",
+            "203.0.113.3/32",
+            "10.20.1.0/24",
+            "10.20.4.0/24"
+          ],
+          "CapMap": "{\"suggest-exit-node\": null}",
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-device_ohara-archive",
+        "kinds": [
+          "TS_Device",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "ohara-archive",
+          "HostName": "ohara-archive",
+          "DNSName": "ohara-archive.tailgrandline.ts.net.",
+          "OS": "linux",
+          "Online": false,
+          "PrimaryIP": "100.64.10.64",
+          "TailscaleIPs": [
+            "100.64.10.64",
+            "fd7a:115c:a1e0::48bb"
+          ],
+          "ExitNode": false,
+          "ExitNodeOption": false,
+          "Created": "2026-03-02T23:05:36.835383403Z",
+          "LastSeen": "2026-03-04T11:57:51.1Z",
+          "LastWrite": "0001-01-01T00:00:00Z",
+          "LastHandshake": "0001-01-01T00:00:00Z",
+          "KeyExpiry": "2026-08-29T23:05:36Z",
+          "FQDN": "ohara-archive.tailgrandline.ts.net",
+          "StableID": "op-node-014",
+          "AllowedIPs": [
+            "100.64.10.64/32",
+            "fd7a:115c:a1e0::48bb/128"
+          ],
+          "Router": false,
+          "IsExternal": false,
+          "Relay": "mia",
+          "Tags": [
+            "tag:devil-fruit"
+          ],
+          "Active": false,
+          "InNetworkMap": true,
+          "InMagicSock": true,
+          "InEngine": false,
+          "RxBytes": 0,
+          "TxBytes": 0
+        }
+      },
+      {
+        "id": "onepiece_ts-externaltailnet_tailalabasta-ts-net",
+        "kinds": [
+          "TS_ExternalTailnet",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tailalabasta.ts.net",
+          "TailnetName": "tailalabasta.ts.net"
+        }
+      },
+      {
+        "id": "onepiece_ts-externaltailnet_tailwano-ts-net",
+        "kinds": [
+          "TS_ExternalTailnet",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tailwano.ts.net",
+          "TailnetName": "tailwano.ts.net"
+        }
+      },
+      {
+        "id": "onepiece_ts-externaltag_tailalabasta-ts-net_tag-going-merry",
+        "kinds": [
+          "TS_ExternalTag",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "tag:going-merry",
+          "TagName": "tag:going-merry",
+          "ExternalTailnet": "tailalabasta.ts.net"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_0-0-0-0-0",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "0.0.0.0/0",
+          "Route": "0.0.0.0/0"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_100-64-10-12-32",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "100.64.10.12/32",
+          "Route": "100.64.10.12/32"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_10-20-3-0-24",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "10.20.3.0/24",
+          "Route": "10.20.3.0/24"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_10-20-5-0-0",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "10.20.5.0/0",
+          "Route": "10.20.5.0/0"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_10-20-0-6-128",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "10.20.0.6/128",
+          "Route": "10.20.0.6/128"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_203-0-113-1-32",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "203.0.113.1/32",
+          "Route": "203.0.113.1/32"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_203-0-113-2-32",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "203.0.113.2/32",
+          "Route": "203.0.113.2/32"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_203-0-113-3-32",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "203.0.113.3/32",
+          "Route": "203.0.113.3/32"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_10-20-1-0-24",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "10.20.1.0/24",
+          "Route": "10.20.1.0/24"
+        }
+      },
+      {
+        "id": "onepiece_ts-route_10-20-4-0-24",
+        "kinds": [
+          "TS_Route",
+          "TS_Base"
+        ],
+        "properties": {
+          "name": "10.20.4.0/24",
+          "Route": "10.20.4.0/24"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "kind": "TS_InExternalTailnet",
+        "start": {
+          "value": "onepiece_ts-externaldevice_thousand-sunny-1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-externaltailnet_tailalabasta-ts-net",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_InExternalTailnet",
+        "start": {
+          "value": "onepiece_ts-externaldevice_going-merry-2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-externaltailnet_tailwano-ts-net",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasExternalTag",
+        "start": {
+          "value": "onepiece_ts-externaldevice_going-merry-2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-externaltag_tailalabasta-ts-net_tag-going-merry",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_InExternalTailnet",
+        "start": {
+          "value": "onepiece_ts-externaltag_tailalabasta-ts-net_tag-going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-externaltailnet_tailwano-ts-net",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_thousand-sunny",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_enies-lobby",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_log-pose",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_climatact-tablet",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_monkey-d-luffy",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_franky-lab",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_monkey-d-luffy",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_drum-island",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_monkey-d-luffy",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_skypiea",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-externaluser_trafalgar-law",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-externaldevice_thousand-sunny-1",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_impel-down",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_RegisteredDevice",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_water-seven",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IsAdminOf",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1138/user-roles?q=admin+role#admin"
+        }
+      },
+      {
+        "kind": "TS_IsOwnerOf",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1138/user-roles?q=admin+role#owner"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_thousand-sunny",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-thousand-sunny",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-reverse-mountain",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-poneglyph",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-news-coo",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_baratie",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-going-merry",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_sabaody",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-devil-fruit",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-sea-stone",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasTag",
+        "start": {
+          "value": "onepiece_ts-device_ohara-archive",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-devil-fruit",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AppConnectorRunsOn",
+        "start": {
+          "value": "onepiece_ts-appconnector_news-coo",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "properties": {
+          "AppConnector": "ip-chicken"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_0-0-0-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_100-64-10-12-32",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-3-0-24",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-5-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-0-6-128",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_0-0-0-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-1-32",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-2-32",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-3-32",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-1-0-24",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-4-0-24",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_EnabledRoute",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-5-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IsMemberOf",
+        "start": {
+          "value": "onepiece_ts-user_monkey-d-luffy",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-group_group-navigators",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IsMemberOf",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-group_group-straw-hats",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IsMemberOf",
+        "start": {
+          "value": "onepiece_ts-user_nami",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-group_group-straw-hats",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_OwnedBy",
+        "start": {
+          "value": "onepiece_ts-tag_tag-reverse-mountain",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-admin",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_OwnedBy",
+        "start": {
+          "value": "onepiece_ts-tag_tag-poneglyph",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-admin",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_OwnedBy",
+        "start": {
+          "value": "onepiece_ts-tag_tag-thousand-sunny",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-admin",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_OwnedBy",
+        "start": {
+          "value": "onepiece_ts-tag_tag-sea-stone",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-admin",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_OwnedBy",
+        "start": {
+          "value": "onepiece_ts-tag_tag-going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-group_group-grand-line-operators",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_OwnedBy",
+        "start": {
+          "value": "onepiece_ts-tag_tag-news-coo",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-group_group-grand-line-operators",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_OwnedBy",
+        "start": {
+          "value": "onepiece_ts-tag_tag-devil-fruit",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-admin",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_DefaultSrcPostureIncludes",
+        "start": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-posture_posture-captainslogpose",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_DefaultSrcPostureIncludes",
+        "start": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-posture_posture-anyseastonewindows",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_DefaultSrcPostureIncludes",
+        "start": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-posture_posture-anydendenmushiios",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_DefaultSrcPostureIncludes",
+        "start": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-posture_posture-anyclimatactmac",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasAutoApproverExitNode",
+        "start": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autoapproverexitnode_exit-node",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverIncludes",
+        "start": {
+          "value": "onepiece_ts-autoapproverexitnode_exit-node",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-admin",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasAutoApproverRoute",
+        "start": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autoapproverroute_0-0-0-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverRouteTargets",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-cidr_0-0-0-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverIncludes",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-sea-stone",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverIncludes",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-group_group-grand-line-operators",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverIncludes",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasAutoApproverRoute",
+        "start": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autoapproverroute_10-20-5-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverRouteTargets",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-cidr_10-20-5-0-0",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverIncludes",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-sea-stone",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverIncludes",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-group_group-grand-line-operators",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AutoApproverIncludes",
+        "start": {
+          "value": "onepiece_ts-autoapproverroute_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_UsesDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_UsesDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_UsesDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-grant_3",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_UsesDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_UsesDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_UsesDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-grant_6",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_UsesDefaultSrcPosture",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-defaultsrcposture_default",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IPSetIncludesRoute",
+        "start": {
+          "value": "onepiece_ts-ipset_ipset-grand-line-lab",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-3-0-24",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_HasHostAllias",
+        "start": {
+          "value": "onepiece_ts-hostalias_poneglyph-vault",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_ACLTestSource",
+        "start": {
+          "value": "onepiece_ts-user_monkey-d-luffy",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-acltest_1",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_ACLTestDeniesDevice",
+        "start": {
+          "value": "onepiece_ts-acltest_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_ACLTestDeniesPort",
+        "start": {
+          "value": "onepiece_ts-acltest_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_8006",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantUsesPort",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_wildcard",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantSource",
+        "start": {
+          "value": "onepiece_ts-group_group-straw-hats",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantUsesPort",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_wildcard",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantSource",
+        "start": {
+          "value": "onepiece_ts-group_group-grand-line-operators",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantUsesPort",
+        "start": {
+          "value": "onepiece_ts-grant_3",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_tcp-80",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantSource",
+        "start": {
+          "value": "onepiece_ts-group_group-navigators",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-grant_3",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantUsesPort",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_wildcard",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantSource",
+        "start": {
+          "value": "onepiece_ts-group_group-grand-line-operators",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantVia",
+        "start": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-tag_tag-news-coo",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantUsesPort",
+        "start": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_wildcard",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantSource",
+        "start": {
+          "value": "onepiece_ts-tag_tag-going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantUsesPort",
+        "start": {
+          "value": "onepiece_ts-grant_6",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_wildcard",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantSource",
+        "start": {
+          "value": "onepiece_ts-tag_tag-devil-fruit",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-grant_6",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_100-64-10-12-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-1-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-2-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-3-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-1-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-3-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-4-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-0-6-128",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "100.64.200.13/32",
+            "10.222.2.0/24",
+            "::/0",
+            "fd7a:115c:a1e0::d536:25eb/128"
+          ],
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "203.0.113.2/32",
+            "203.0.113.3/32",
+            "203.0.113.1/32",
+            "10.222.3.0/24",
+            "10.222.1.0/24",
+            "::/0"
+          ],
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsAppConnector",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-appconnector_news-coo",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_1"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_thousand-sunny",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_enies-lobby",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_log-pose",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_climatact-tablet",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_franky-lab",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_drum-island",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_baratie",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_sabaody",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_skypiea",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_impel-down",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_water-seven",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_ohara-archive",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_100-64-10-12-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-1-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-2-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-3-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-1-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-3-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-4-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-0-6-128",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "100.64.200.13/32",
+            "10.222.2.0/24",
+            "::/0",
+            "fd7a:115c:a1e0::d536:25eb/128"
+          ],
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "203.0.113.2/32",
+            "203.0.113.3/32",
+            "203.0.113.1/32",
+            "10.222.3.0/24",
+            "10.222.1.0/24",
+            "::/0"
+          ],
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsAppConnector",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-appconnector_news-coo",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_2"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_thousand-sunny",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_enies-lobby",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_log-pose",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_climatact-tablet",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_franky-lab",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_drum-island",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_baratie",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_sabaody",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_skypiea",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_impel-down",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_water-seven",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_ohara-archive",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_3",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_100-64-10-12-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-1-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-2-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-3-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-1-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-3-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-4-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-0-6-128",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "100.64.200.13/32",
+            "10.222.2.0/24",
+            "::/0",
+            "fd7a:115c:a1e0::d536:25eb/128"
+          ],
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "203.0.113.2/32",
+            "203.0.113.3/32",
+            "203.0.113.1/32",
+            "10.222.3.0/24",
+            "10.222.1.0/24",
+            "::/0"
+          ],
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsAppConnector",
+        "start": {
+          "value": "onepiece_ts-grant_4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-appconnector_news-coo",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_4"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-3-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_5"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Grant": "grant_5"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "10.222.2.0/24"
+          ],
+          "Grant": "grant_5"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-grant_5",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0"
+          ],
+          "Grant": "grant_5"
+        }
+      },
+      {
+        "kind": "TS_GrantTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-grant_6",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IsMemberOf",
+        "start": {
+          "value": "onepiece_ts-user_monkey-d-luffy",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-member",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IsMemberOf",
+        "start": {
+          "value": "onepiece_ts-user_nami",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-member",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_IsMemberOf",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-member",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AclSource",
+        "start": {
+          "value": "onepiece_ts-autogroup_autogroup-member",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AclUsesPort",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-portspec_wildcard",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_0-0-0-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_100-64-10-12-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-1-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-2-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_203-0-113-3-32",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-1-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-3-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-4-0-24",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-5-0-0",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsRoute",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-route_10-20-0-6-128",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "100.64.200.13/32",
+            "10.222.2.0/24",
+            "::/0",
+            "fd7a:115c:a1e0::d536:25eb/128"
+          ],
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsExitNode",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1103/exit-nodes",
+          "Routes": [
+            "0.0.0.0/0",
+            "203.0.113.2/32",
+            "203.0.113.3/32",
+            "203.0.113.1/32",
+            "10.222.3.0/24",
+            "10.222.1.0/24",
+            "::/0"
+          ],
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_AclTargetsAppConnector",
+        "start": {
+          "value": "onepiece_ts-acl_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-appconnector_news-coo",
+          "match_by": "id"
+        },
+        "properties": {
+          "Acl": "acl_1"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_thousand-sunny",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_enies-lobby",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_log-pose",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_climatact-tablet",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_franky-lab",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_drum-island",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_baratie",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_sabaody",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_skypiea",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_impel-down",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_water-seven",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelCapabilities",
+        "start": {
+          "value": "onepiece_ts-device_ohara-archive",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelEnabled",
+        "start": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_HasFunnelEnabled",
+        "start": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-network_straw-hat-local",
+          "match_by": "id"
+        },
+        "properties": {
+          "Reference": "https://tailscale.com/kb/1223/funnel"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleSource",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshrule_1",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleTargetsSelf",
+        "start": {
+          "value": "onepiece_ts-sshrule_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-autogroup_autogroup-self",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_1",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleAllowsUser",
+        "start": {
+          "value": "onepiece_ts-sshrule_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshuser_autogroup-nonroot",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_1",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleAllowsUser",
+        "start": {
+          "value": "onepiece_ts-sshrule_1",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshuser_root",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_1",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleSource",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshrule_2",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-sshrule_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_wano-relay",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_2",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleAllowsUser",
+        "start": {
+          "value": "onepiece_ts-sshrule_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshuser_autogroup-nonroot",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_2",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleAllowsUser",
+        "start": {
+          "value": "onepiece_ts-sshrule_2",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshuser_root",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_2",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleSource",
+        "start": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshrule_3",
+          "match_by": "id"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleTargetsDevice",
+        "start": {
+          "value": "onepiece_ts-sshrule_3",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-device_going-merry",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_3",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleAllowsUser",
+        "start": {
+          "value": "onepiece_ts-sshrule_3",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshuser_autogroup-nonroot",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_3",
+          "SshAction": "check"
+        }
+      },
+      {
+        "kind": "TS_SSHRuleAllowsUser",
+        "start": {
+          "value": "onepiece_ts-sshrule_3",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-sshuser_root",
+          "match_by": "id"
+        },
+        "properties": {
+          "SshRule": "ssh_3",
+          "SshAction": "check"
+        }
+      }
+    ]
+  }
+}

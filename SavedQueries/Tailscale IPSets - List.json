@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale IPSets - List",
+  "description": "List IP sets defined in the ACL policy",
+  "query": "MATCH (i:TS_IPSet) RETURN i"
+}

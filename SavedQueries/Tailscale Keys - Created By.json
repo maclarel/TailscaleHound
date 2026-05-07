@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u)-[:TS_CreatedBy]->(d:TS_User) RETURN p",
+  "name": "Tailscale Keys - Created By",
+  "description": "Get keys and their creators "
+}

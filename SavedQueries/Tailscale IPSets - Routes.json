@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale IPSets - Routes",
+  "description": "Show IP sets mapped to routes",
+  "query": "MATCH p=(i:TS_IPSet)-[:TS_IPSetIncludesRoute]->(r:TS_Route) RETURN p"
+}

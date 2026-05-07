@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL Tests - Source Paths [Direct Source]",
+  "description": "Show direct user source paths to ACL test cases",
+  "query": "MATCH p=(u:TS_User)-[:TS_ACLTestSource]->(t:TS_ACLTest)\nRETURN p"
+}

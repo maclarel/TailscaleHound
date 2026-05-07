@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL Tests - Source Paths [Group Membership]",
+  "description": "Show group membership paths to ACL test cases",
+  "query": "MATCH p=(u:TS_User)-[:TS_IsMemberOf]->(s)-[:TS_ACLTestSource]->(t:TS_ACLTest)\nRETURN p"
+}

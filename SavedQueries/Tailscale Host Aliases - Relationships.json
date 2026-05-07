@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Host Aliases - Relationships",
+  "description": "Get host alias relationships to resolved devices",
+  "query": "MATCH p=(h:TS_HostAlias)-[:TS_HasHostAllias]->(d) RETURN p"
+}

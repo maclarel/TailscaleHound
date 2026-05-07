@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Sources",
+  "description": "Show grant source relationships",
+  "query": "MATCH p=()-[:TS_GrantSource]->(g:TS_Grant) RETURN p"
+}

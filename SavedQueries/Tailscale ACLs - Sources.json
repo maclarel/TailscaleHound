@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACLs - Sources",
+  "description": "Show source selectors attached to ACL rules",
+  "query": "MATCH p=()-[:TS_AclSource]->(a:TS_ACL) RETURN p"
+}

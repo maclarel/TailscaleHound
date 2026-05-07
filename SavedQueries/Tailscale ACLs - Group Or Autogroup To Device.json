@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACLs - Group Or Autogroup To Device",
+  "description": "Show group or autogroup membership leading to ACL rule target devices",
+  "query": "MATCH path=(u:TS_User)-[:TS_IsMemberOf]->(g)-[:TS_AclSource]->(a:TS_ACL)-[:TS_AclTargetsDevice]->(d) RETURN path"
+}

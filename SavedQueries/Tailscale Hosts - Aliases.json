@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Hosts - Aliases",
+  "description": "Get host aliases defined in the ACL policy",
+  "query": "MATCH (h:TS_HostAlias) RETURN h"
+}

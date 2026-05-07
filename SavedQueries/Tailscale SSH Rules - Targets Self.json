@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH Rules - Targets Self",
+  "description": "Show group membership paths to SSH rules that target autogroup:self",
+  "query": "MATCH p=(u:TS_User)-[:TS_IsMemberOf]->(g)-[:TS_SSHRuleSource]->(r:TS_SSHRule)-[:TS_SSHRuleTargetsSelf]->(a:TS_AutoGroup)\nRETURN p"
+}

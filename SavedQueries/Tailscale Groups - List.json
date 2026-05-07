@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Groups - List",
+  "description": "List all Tailscale groups from ACL policy",
+  "query": "MATCH (g:TS_Group) RETURN g"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Invites - User Invites",
+  "description": "List tailnet user invites",
+  "query": "//NOT TESTED\nMATCH (i:TS_UserInvite) RETURN i"
+}

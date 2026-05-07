@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACLs - Targets Devices",
+  "description": "Show ACL rules linked directly to devices",
+  "query": "MATCH p=(a:TS_ACL)-[:TS_AclTargetsDevice]->(d) RETURN p"
+}

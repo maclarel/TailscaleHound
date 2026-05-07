@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Keys - Tags",
+  "description": "Show which tags are associated with tailnet keys",
+  "query": "MATCH p=(k)-[:TS_KeyHasTag]->(t:TS_Tag)\nRETURN p"
+}

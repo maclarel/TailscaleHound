@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Webhooks - Relationships",
+  "description": "Get webhook relationships",
+  "query": "MATCH p=()-[:TS_HasWebhook|:TS_CreatedWebhook]->() RETURN p"
+}

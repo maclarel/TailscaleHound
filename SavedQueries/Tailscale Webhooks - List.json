@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Webhooks - List",
+  "description": "List tailnet webhooks",
+  "query": "MATCH (w:TS_Webhook) RETURN w"
+}

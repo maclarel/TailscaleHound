@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Groups - Membership",
+  "description": "Get Tailscale group memberships",
+  "query": "MATCH p=(u:TS_User)-[:TS_IsMemberOf]->(g:TS_Group) return p"
+}

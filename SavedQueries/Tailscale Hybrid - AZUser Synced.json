@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(a:AZUser)-[:TS_AZUserSyncedToUser]->(t:TS_User)\nRETURN p",
+  "name": "Tailscale Hybrid - AZUser Synced",
+  "description": "Show AZUser to Tailscale user sync edges"
+}

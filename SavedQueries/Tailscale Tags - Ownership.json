@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Tags - Ownership",
+  "description": "Get tag ownership relationships",
+  "query": "MATCH p=(t:TS_Tag)-[:TS_OwnedBy]->(o) return p"
+}

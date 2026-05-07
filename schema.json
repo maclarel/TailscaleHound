@@ -1,0 +1,663 @@
+{
+  "schema": {
+    "name": "TailscaleHound",
+    "display_name": "TailscaleHound",
+    "version": "v0.0.1",
+    "namespace": "TS"
+  },
+  "node_kinds": [
+    {
+      "name": "TS_APIKey",
+      "display_name": "Tailnet API Key",
+      "description": "TailscaleHound node kind for Tailnet API Key.",
+      "is_display_kind": true,
+      "icon": "key",
+      "color": "#F97316"
+    },
+    {
+      "name": "TS_AuthKey",
+      "display_name": "Tailnet Auth Key",
+      "description": "TailscaleHound node kind for Tailnet Auth Key.",
+      "is_display_kind": true,
+      "icon": "key",
+      "color": "#16A34A"
+    },
+    {
+      "name": "TS_ClientKey",
+      "display_name": "Tailnet Client Key",
+      "description": "TailscaleHound node kind for Tailnet Client Key.",
+      "is_display_kind": true,
+      "icon": "key",
+      "color": "#2563EB"
+    },
+    {
+      "name": "TS_FederatedKey",
+      "display_name": "Tailnet Federated Key",
+      "description": "TailscaleHound node kind for Tailnet Federated Key.",
+      "is_display_kind": true,
+      "icon": "key",
+      "color": "#DB2777"
+    },
+    {
+      "name": "TS_UnknownKey",
+      "display_name": "Tailnet Unknown Key",
+      "description": "TailscaleHound node kind for Tailnet Unknown Key.",
+      "is_display_kind": true,
+      "icon": "key",
+      "color": "#9CA3AF"
+    },
+    {
+      "name": "TS_ACL",
+      "display_name": "Tailscale ACL",
+      "description": "TailscaleHound node kind for Tailscale ACL.",
+      "is_display_kind": true,
+      "icon": "gavel",
+      "color": "#8B5CF6"
+    },
+    {
+      "name": "TS_ACLTest",
+      "display_name": "Tailscale ACL Test",
+      "description": "TailscaleHound node kind for Tailscale ACL Test.",
+      "is_display_kind": true,
+      "icon": "vial",
+      "color": "#F59E0B"
+    },
+    {
+      "name": "TS_AppConnector",
+      "display_name": "Tailscale App Connector",
+      "description": "TailscaleHound node kind for Tailscale App Connector.",
+      "is_display_kind": true,
+      "icon": "diagram-project",
+      "color": "#06B6D4"
+    },
+    {
+      "name": "TS_Attr",
+      "display_name": "Tailscale Attr",
+      "description": "TailscaleHound node kind for Tailscale Attr.",
+      "is_display_kind": true,
+      "icon": "circle",
+      "color": "#9CA3AF"
+    },
+    {
+      "name": "TS_AutoApproverExitNode",
+      "display_name": "Tailscale Auto Approver Exit Node",
+      "description": "TailscaleHound node kind for Tailscale Auto Approver Exit Node.",
+      "is_display_kind": true,
+      "icon": "circle-check",
+      "color": "#22C55E"
+    },
+    {
+      "name": "TS_AutoApproverRoute",
+      "display_name": "Tailscale Auto Approver Route",
+      "description": "TailscaleHound node kind for Tailscale Auto Approver Route.",
+      "is_display_kind": true,
+      "icon": "route",
+      "color": "#F59E0B"
+    },
+    {
+      "name": "TS_AutoGroup",
+      "display_name": "Tailscale Auto Group",
+      "description": "TailscaleHound node kind for Tailscale Auto Group.",
+      "is_display_kind": true,
+      "icon": "users-gear",
+      "color": "#3B82F6"
+    },
+    {
+      "name": "TS_Cidr",
+      "display_name": "Tailscale Cidr",
+      "description": "TailscaleHound node kind for Tailscale Cidr.",
+      "is_display_kind": true,
+      "icon": "network-wired",
+      "color": "#22C55E"
+    },
+    {
+      "name": "TS_DefaultSrcPosture",
+      "display_name": "Tailscale Default Src Posture",
+      "description": "TailscaleHound node kind for Tailscale Default Src Posture.",
+      "is_display_kind": true,
+      "icon": "shield",
+      "color": "#10B981"
+    },
+    {
+      "name": "TS_Device",
+      "display_name": "Tailscale Device",
+      "description": "TailscaleHound node kind for Tailscale Device.",
+      "is_display_kind": true,
+      "icon": "desktop",
+      "color": "#F38181"
+    },
+    {
+      "name": "TS_DeviceInvite",
+      "display_name": "Tailscale Device Invite",
+      "description": "TailscaleHound node kind for Tailscale Device Invite.",
+      "is_display_kind": true,
+      "icon": "share-square",
+      "color": "#A855F7"
+    },
+    {
+      "name": "TS_ExternalDevice",
+      "display_name": "Tailscale External Device",
+      "description": "TailscaleHound node kind for Tailscale External Device.",
+      "is_display_kind": true,
+      "icon": "desktop",
+      "color": "#F43F5E"
+    },
+    {
+      "name": "TS_ExternalTag",
+      "display_name": "Tailscale External Tag",
+      "description": "TailscaleHound node kind for tags observed on devices shared from external tailnets.",
+      "is_display_kind": true,
+      "icon": "tag",
+      "color": "#F97316"
+    },
+    {
+      "name": "TS_ExternalUser",
+      "display_name": "Tailscale External User",
+      "description": "TailscaleHound node kind for users associated only with external tailnet devices.",
+      "is_display_kind": true,
+      "icon": "circle-user",
+      "color": "#A855F7"
+    },
+    {
+      "name": "TS_ExternalTailnet",
+      "display_name": "Tailscale External Tailnet",
+      "description": "TailscaleHound node kind for Tailscale External Tailnet.",
+      "is_display_kind": true,
+      "icon": "hexagon-nodes",
+      "color": "#F59E0B"
+    },
+    {
+      "name": "TS_Grant",
+      "display_name": "Tailscale Grant",
+      "description": "TailscaleHound node kind for Tailscale Grant.",
+      "is_display_kind": true,
+      "icon": "gavel",
+      "color": "#8B5CF6"
+    },
+    {
+      "name": "TS_Group",
+      "display_name": "Tailscale Group",
+      "description": "TailscaleHound node kind for Tailscale Group.",
+      "is_display_kind": true,
+      "icon": "users",
+      "color": "#10B981"
+    },
+    {
+      "name": "TS_HostAlias",
+      "display_name": "Tailscale Host Alias",
+      "description": "TailscaleHound node kind for Tailscale Host Alias.",
+      "is_display_kind": true,
+      "icon": "at",
+      "color": "#10B981"
+    },
+    {
+      "name": "TS_IDP",
+      "display_name": "Tailscale IDP",
+      "description": "TailscaleHound node kind for Tailscale IDP.",
+      "is_display_kind": true,
+      "icon": "id-badge",
+      "color": "#0EA5E9"
+    },
+    {
+      "name": "TS_IPSet",
+      "display_name": "Tailscale IP Set",
+      "description": "TailscaleHound node kind for Tailscale IP Set.",
+      "is_display_kind": true,
+      "icon": "sitemap",
+      "color": "#3B82F6"
+    },
+    {
+      "name": "TS_Network",
+      "display_name": "Tailscale Network",
+      "description": "TailscaleHound node kind for Tailscale Network.",
+      "is_display_kind": true,
+      "icon": "hexagon-nodes",
+      "color": "#34D399"
+    },
+    {
+      "name": "TS_NodeAttr",
+      "display_name": "Tailscale Node Attr",
+      "description": "TailscaleHound node kind for Tailscale Node Attr.",
+      "is_display_kind": true,
+      "icon": "sliders-h",
+      "color": "#14B8A6"
+    },
+    {
+      "name": "TS_PortSpec",
+      "display_name": "Tailscale Port Spec",
+      "description": "TailscaleHound node kind for Tailscale Port Spec.",
+      "is_display_kind": true,
+      "icon": "plug",
+      "color": "#F97316"
+    },
+    {
+      "name": "TS_Posture",
+      "display_name": "Tailscale Posture",
+      "description": "TailscaleHound node kind for Tailscale Posture.",
+      "is_display_kind": true,
+      "icon": "shield",
+      "color": "#22C55E"
+    },
+    {
+      "name": "TS_Route",
+      "display_name": "Tailscale Route",
+      "description": "TailscaleHound node kind for Tailscale Route.",
+      "is_display_kind": true,
+      "icon": "network-wired",
+      "color": "#EAB308"
+    },
+    {
+      "name": "TS_SSHRule",
+      "display_name": "Tailscale SSH Rule",
+      "description": "TailscaleHound node kind for Tailscale SSH Rule.",
+      "is_display_kind": true,
+      "icon": "terminal",
+      "color": "#EC4899"
+    },
+    {
+      "name": "TS_SSHTest",
+      "display_name": "Tailscale SSH Test",
+      "description": "TailscaleHound node kind for Tailscale SSH Test.",
+      "is_display_kind": true,
+      "icon": "vial",
+      "color": "#EC4899"
+    },
+    {
+      "name": "TS_SSHUser",
+      "display_name": "Tailscale SSH User",
+      "description": "TailscaleHound node kind for Tailscale SSH User.",
+      "is_display_kind": true,
+      "icon": "user-circle",
+      "color": "#38BDF8"
+    },
+    {
+      "name": "TS_Service",
+      "display_name": "Tailscale Service",
+      "description": "TailscaleHound node kind for Tailscale Service.",
+      "is_display_kind": true,
+      "icon": "server",
+      "color": "#0EA5E9"
+    },
+    {
+      "name": "TS_Tag",
+      "display_name": "Tailscale Tag",
+      "description": "TailscaleHound node kind for Tailscale Tag.",
+      "is_display_kind": true,
+      "icon": "tag",
+      "color": "#F59E0B"
+    },
+    {
+      "name": "TS_User",
+      "display_name": "Tailscale User",
+      "description": "TailscaleHound node kind for Tailscale User.",
+      "is_display_kind": true,
+      "icon": "circle-user",
+      "color": "#6366F1"
+    },
+    {
+      "name": "TS_UserInvite",
+      "display_name": "Tailscale User Invite",
+      "description": "TailscaleHound node kind for Tailscale User Invite.",
+      "is_display_kind": true,
+      "icon": "user-plus",
+      "color": "#84CC16"
+    },
+    {
+      "name": "TS_Webhook",
+      "display_name": "Tailscale Webhook",
+      "description": "TailscaleHound node kind for Tailscale Webhook.",
+      "is_display_kind": true,
+      "icon": "broadcast-tower",
+      "color": "#EF4444"
+    },
+    {
+      "name": "TS_Wildcard",
+      "display_name": "Tailscale Wildcard",
+      "description": "TailscaleHound node kind for Tailscale Wildcard.",
+      "is_display_kind": true,
+      "icon": "asterisk",
+      "color": "#9CA3AF"
+    }
+  ],
+  "relationship_kinds": [
+    {
+      "name": "TS_AZUserSyncedToUser",
+      "description": "TailscaleHound relationship kind for AZ User Synced To Tailscale User.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_ACLTestDenies",
+      "description": "TailscaleHound relationship kind for Tailscale ACL Test Denies.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_ACLTestSource",
+      "description": "TailscaleHound relationship kind for Tailscale ACL Test Source.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_ACLTestDeniesDevice",
+      "description": "TailscaleHound relationship kind for Tailscale ACL Test Denies Device.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_ACLTestDeniesPort",
+      "description": "TailscaleHound relationship kind for Tailscale ACL Test Denies Port.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_AcceptedBy",
+      "description": "TailscaleHound relationship kind for Tailscale Accepted By.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_AclSource",
+      "description": "TailscaleHound relationship kind for Tailscale Acl Source.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_AclTargetsAppConnector",
+      "description": "TailscaleHound relationship kind for Tailscale Acl Targets App Connector.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_AclTargetsDevice",
+      "description": "TailscaleHound relationship kind for Tailscale Acl Targets Device.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_AclTargetsExitNode",
+      "description": "TailscaleHound relationship kind for Tailscale Acl Targets Exit Node.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_AclTargetsRoute",
+      "description": "TailscaleHound relationship kind for Tailscale Acl Targets Route.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_AclUsesPort",
+      "description": "TailscaleHound relationship kind for Tailscale Acl Uses Port.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_AppConnectorRunsOn",
+      "description": "TailscaleHound relationship kind for Tailscale App Connector Runs On.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_AutoApproverIncludes",
+      "description": "TailscaleHound relationship kind for Tailscale Auto Approver Includes.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_AutoApproverRouteTargets",
+      "description": "TailscaleHound relationship kind for Tailscale Auto Approver Route Targets.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_CreatedBy",
+      "description": "TailscaleHound relationship kind for Tailscale Created By.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_CreatedInvite",
+      "description": "TailscaleHound relationship kind for Tailscale Created Invite.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_CreatedWebhook",
+      "description": "TailscaleHound relationship kind for Tailscale Created Webhook.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_DefaultSrcPostureIncludes",
+      "description": "TailscaleHound relationship kind for Tailscale Default Src Posture Includes.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_EnabledRoute",
+      "description": "TailscaleHound relationship kind for Tailscale Enabled Route.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_GrantSource",
+      "description": "TailscaleHound relationship kind for Tailscale Grant Source.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_GrantTargetsAppConnector",
+      "description": "TailscaleHound relationship kind for Tailscale Grant Targets App Connector.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_GrantTargetsDevice",
+      "description": "TailscaleHound relationship kind for Tailscale Grant Targets Device.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_GrantTargetsExitNode",
+      "description": "TailscaleHound relationship kind for Tailscale Grant Targets Exit Node.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_GrantTargetsRoute",
+      "description": "TailscaleHound relationship kind for Tailscale Grant Targets Route.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_GrantUsesPort",
+      "description": "TailscaleHound relationship kind for Tailscale Grant Uses Port.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_GrantVia",
+      "description": "TailscaleHound relationship kind for Tailscale Grant Via.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasAutoApproverExitNode",
+      "description": "TailscaleHound relationship kind for Tailscale Has Auto Approver Exit Node.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasAutoApproverRoute",
+      "description": "TailscaleHound relationship kind for Tailscale Has Auto Approver Route.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasDefaultSrcPosture",
+      "description": "TailscaleHound relationship kind for Tailscale Has Default Src Posture.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasDeviceInvite",
+      "description": "TailscaleHound relationship kind for Tailscale Has Device Invite.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasFunnelCapabilities",
+      "description": "TailscaleHound relationship kind for Tailscale Has Funnel Capabilities.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_HasFunnelEnabled",
+      "description": "TailscaleHound relationship kind for Tailscale Has Funnel Enabled.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_HasExternalTag",
+      "description": "TailscaleHound relationship kind for external device tags scoped to their external tailnet.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasHostAllias",
+      "description": "TailscaleHound relationship kind for Tailscale Has Host Allias.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasService",
+      "description": "TailscaleHound relationship kind for Tailscale Has Service.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_RegisteredDevice",
+      "description": "TailscaleHound relationship kind for Tailscale User Registered Device.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_HasTag",
+      "description": "TailscaleHound relationship kind for Tailscale Has Tag.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_HasUserInvite",
+      "description": "TailscaleHound relationship kind for Tailscale Has User Invite.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_HasWebhook",
+      "description": "TailscaleHound relationship kind for Tailscale Has Webhook.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_IPSetIncludesRoute",
+      "description": "TailscaleHound relationship kind for Tailscale IP Set Includes Route.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_IdentityProvider",
+      "description": "TailscaleHound relationship kind for Tailscale Identity Provider.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_InExternalTailnet",
+      "description": "TailscaleHound relationship kind for Tailscale In External Tailnet.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_InvitesToDevice",
+      "description": "TailscaleHound relationship kind for Tailscale Invites To Device.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_IsAdminOf",
+      "description": "TailscaleHound relationship kind for Tailscale Is Admin Of.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_IsAuditorOf",
+      "description": "TailscaleHound relationship kind for Tailscale Is Auditor Of.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_IsBillingAdminOf",
+      "description": "TailscaleHound relationship kind for Tailscale Is Billing Admin Of.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_IsExitNode",
+      "description": "TailscaleHound relationship kind for Tailscale Is Exit Node.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_IsITAdminOf",
+      "description": "TailscaleHound relationship kind for Tailscale Is IT Admin Of.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_IsMemberOf",
+      "description": "TailscaleHound relationship kind for Tailscale Is Member Of.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_IsNetworkAdminOf",
+      "description": "TailscaleHound relationship kind for Tailscale Is Network Admin Of.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_IsOwnerOf",
+      "description": "TailscaleHound relationship kind for Tailscale Is Owner Of.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_KeyHasTag",
+      "description": "TailscaleHound relationship kind for Tailscale Key Has Tag.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_OwnedBy",
+      "description": "TailscaleHound relationship kind for Tailscale Owned By.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_RequiresPosture",
+      "description": "TailscaleHound relationship kind for Tailscale Requires Posture.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_SSHRuleAllowsUser",
+      "description": "TailscaleHound relationship kind for Tailscale SSH Rule Allows User.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_SSHRuleSource",
+      "description": "TailscaleHound relationship kind for Tailscale SSH Rule Source.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_SSHRuleTargetsDevice",
+      "description": "TailscaleHound relationship kind for Tailscale SSH Rule Targets Device.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_SSHRuleTargetsSelf",
+      "description": "TailscaleHound relationship kind for Tailscale SSH Rule Targets Self.",
+      "is_traversable": true
+    },
+    {
+      "name": "TS_SSHTestDeniesUser",
+      "description": "TailscaleHound relationship kind for Tailscale SSH Test Denies User.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_ServiceHasTag",
+      "description": "TailscaleHound relationship kind for Tailscale Service Has Tag.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_ServiceRunsOn",
+      "description": "TailscaleHound relationship kind for Tailscale Service Runs On.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_UserSentDeviceInvite",
+      "description": "TailscaleHound relationship kind for Tailscale User Sent Device Invite.",
+      "is_traversable": false
+    },
+    {
+      "name": "TS_UsesDefaultSrcPosture",
+      "description": "TailscaleHound relationship kind for Tailscale Uses Default Src Posture.",
+      "is_traversable": false
+    }
+  ],
+  "environments": [
+    {
+      "environment_kind": "TS_Network",
+      "source_kind": "TS",
+      "principal_kinds": [
+        "TS_User",
+        "TS_ExternalUser",
+        "TS_Group",
+        "TS_AutoGroup",
+        "TS_Device",
+        "TS_ExternalDevice",
+        "TS_ExternalTag",
+        "TS_Tag",
+        "TS_Service",
+        "TS_AppConnector"
+      ]
+    }
+  ],
+  "relationship_findings": []
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Network - External Tailnets",
+  "description": "Show devices linked to external tailnets",
+  "query": "MATCH p=(d:TS_ExternalDevice)-[:TS_InExternalTailnet]->(t:TS_ExternalTailnet)\nRETURN p"
+}

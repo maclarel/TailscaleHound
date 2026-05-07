@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_User) return p",
+  "name": "Tailscale Users - List",
+  "description": "Get tailscale users "
+}

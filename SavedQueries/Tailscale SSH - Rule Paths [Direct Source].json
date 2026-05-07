@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_User)-[:TS_SSHRuleSource]->(r:TS_SSHRule)-[:TS_SSHRuleTargetsDevice]->(d:TS_Device)\nRETURN p",
+  "name": "Tailscale SSH - Rule Paths [Direct Source]",
+  "description": "Show direct users that can SSH to explicitly targeted devices through Tailscale SSH rules"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL Tests - Source To Denied Ports [Direct Source]",
+  "description": "Show direct user ACL test paths to specifically denied port specs",
+  "query": "MATCH p=(u:TS_User)-[:TS_ACLTestSource]->(t:TS_ACLTest)-[:TS_ACLTestDeniesPort]->(port:TS_PortSpec)\nRETURN p"
+}

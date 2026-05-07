@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(d:TS_Device)-[:TS_HasFunnelCapabilities]->(n:TS_Network) return p",
+  "name": "Tailscale Funnel - Capabilities",
+  "description": "Get tailscale devices with Funnel capabilities enabled by policy"
+}

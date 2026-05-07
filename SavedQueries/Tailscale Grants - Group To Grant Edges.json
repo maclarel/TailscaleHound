@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Group To Grant Edges",
+  "description": "Show user group membership and all outgoing grant relationships",
+  "query": "MATCH path=(u:TS_User)-[:TS_IsMemberOf]->(g:TS_Group)-[:TS_GrantSource]->(gr:TS_Grant)-[r]->(x) RETURN path"
+}

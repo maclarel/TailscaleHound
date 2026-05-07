@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Hybrid - AZUser SSH As User [Direct Source]",
+  "description": "Map AZUser to direct SSH users for explicitly targeted devices through Tailscale SSH rules",
+  "query": "MATCH p1=(az:AZUser)-[:TS_AZUserSyncedToUser]->(u:TS_User)-[:TS_SSHRuleSource]->(r:TS_SSHRule)-[:TS_SSHRuleTargetsDevice]->(d:TS_Device)\nMATCH p2=(r)-[:TS_SSHRuleAllowsUser]->(ssh:TS_SSHUser)\nRETURN p1, p2"
+}

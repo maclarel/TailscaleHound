@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Rules",
+  "description": "List ACL grant rules from policy",
+  "query": "MATCH (g:TS_Grant) RETURN g"
+}

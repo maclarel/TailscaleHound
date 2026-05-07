@@ -1,0 +1,1 @@
+{"name": "Tailscale Network - All Relationships", "description": "Show all relationship types in the graph (full edge list)", "query": "MATCH p=(:TS_Base)-[]->(:TS_Base) return p"}

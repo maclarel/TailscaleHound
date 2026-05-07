@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(n:TS_Network)-[:TS_IdentityProvider]->(i:TS_IDP) return p",
+  "name": "Tailscale Network - Identity Provider",
+  "description": "Show tailnet identity provider"
+}

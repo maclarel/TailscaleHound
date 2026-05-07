@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH Tests - List",
+  "description": "Get SSH test cases from the policy",
+  "query": "MATCH (t:TS_SSHTest) RETURN t"
+}

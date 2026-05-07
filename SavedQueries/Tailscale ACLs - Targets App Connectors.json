@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACLs - Targets App Connectors",
+  "description": "Show ACL rules linked directly to app connectors",
+  "query": "MATCH path=(a:TS_ACL)-[:TS_AclTargetsAppConnector]->(app:TS_AppConnector) RETURN path"
+}

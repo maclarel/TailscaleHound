@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH Rules - Allowed Users",
+  "description": "Show SSH rules linked to allowed SSH users",
+  "query": "MATCH p=(s:TS_SSHRule)-[:TS_SSHRuleAllowsUser]->(u:TS_SSHUser) RETURN p"
+}

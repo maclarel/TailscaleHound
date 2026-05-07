@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_User)-[:TS_IsExitNode]->(d:TS_Device) return p",
+  "name": "Tailscale Exit Nodes - Current",
+  "description": "Get current exit node for users "
+}

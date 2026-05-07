@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Invites - User Invite Relationships",
+  "description": "Get user invite relationships",
+  "query": "MATCH p=()-[:TS_HasUserInvite|TS_CreatedInvite]->() RETURN p"
+}

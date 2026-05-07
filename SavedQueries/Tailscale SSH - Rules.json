@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH - Rules",
+  "description": "List SSH rules from ACL policy",
+  "query": "MATCH (s:TS_SSHRule) RETURN s"
+}

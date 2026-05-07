@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Sources To Target Devices",
+  "description": "Show grant sources connected to grant nodes and their target devices",
+  "query": "MATCH path=()-[:TS_GrantSource]->(g:TS_Grant)-[:TS_GrantTargetsDevice]->(d)\nRETURN path"
+}

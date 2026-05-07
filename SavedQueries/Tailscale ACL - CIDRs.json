@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL - CIDRs",
+  "description": "List CIDR targets referenced in ACL policy",
+  "query": "MATCH (c:TS_Cidr) RETURN c"
+}

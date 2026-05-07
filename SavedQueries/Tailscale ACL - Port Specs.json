@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL - Port Specs",
+  "description": "List port specs referenced in ACL policy",
+  "query": "MATCH (p:TS_PortSpec) RETURN p"
+}

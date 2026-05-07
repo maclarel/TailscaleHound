@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Tags - Tagged Device Policy Sources",
+  "description": "Show tailnet devices whose local tags are used as ACL or grant sources",
+  "query": "MATCH p=(src:TS_Device)-[:TS_HasTag]->(tag:TS_Tag)-[:TS_GrantSource|TS_AclSource]->(rule)\nRETURN p"
+}

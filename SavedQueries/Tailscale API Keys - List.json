@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale API Keys - List",
+  "description": "List tailnet API keys",
+  "query": "MATCH (k:TS_APIKey) RETURN k"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL - Rules",
+  "description": "List ACL rules from policy",
+  "query": "MATCH (a:TS_ACL) RETURN a"
+}

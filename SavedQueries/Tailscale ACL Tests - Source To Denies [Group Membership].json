@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL Tests - Source To Denies [Group Membership]",
+  "description": "Show group membership ACL test paths to denied destinations and resolved devices",
+  "query": "MATCH p=(u:TS_User)-[:TS_IsMemberOf]->(s)-[:TS_ACLTestSource]->(t:TS_ACLTest)-[:TS_ACLTestDenies|TS_ACLTestDeniesDevice]->(x)\nRETURN p"
+}

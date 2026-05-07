@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Posture - Required By Rules",
+  "description": "Show posture requirements for ACL/grant rules",
+  "query": "MATCH a=((p:TS_Posture)<-[:TS_RequiresPosture]-(r)) RETURN a"
+}

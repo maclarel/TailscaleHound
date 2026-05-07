@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Group To Device",
+  "description": "Show user group membership leading to grant target devices",
+  "query": "MATCH path=(u:TS_User)-[:TS_IsMemberOf]->(g:TS_Group)-[:TS_GrantSource]->(gr:TS_Grant)-[:TS_GrantTargetsDevice]->(d) RETURN path"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Access - Device Port Access [Direct Source]",
+  "description": "Show direct user rule-based access to devices and the ports attached to those same rules",
+  "query": "MATCH p1=(u:TS_User)-[:TS_AclSource|TS_GrantSource]->(r)-[:TS_AclTargetsDevice|TS_GrantTargetsDevice]->(d)\nMATCH p2=(r)-[:TS_AclUsesPort|TS_GrantUsesPort]->(port:TS_PortSpec)\nRETURN p1, p2"
+}

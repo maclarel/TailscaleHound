@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL - Raw Targets",
+  "description": "Show ACL sources and their raw rule targets",
+  "query": "MATCH path=(s)-[:TS_AclSource]->(a:TS_ACL)-[:TS_AclTargetsAppConnector|TS_AclTargetsDevice|TS_AclTargetsExitNode|TS_AclTargetsRoute|TS_AclUsesPort]->(x) RETURN path"
+}

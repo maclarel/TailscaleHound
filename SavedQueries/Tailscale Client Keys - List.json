@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Client Keys - List",
+  "description": "List tailnet client keys",
+  "query": "MATCH (k:TS_ClientKey) RETURN k"
+}

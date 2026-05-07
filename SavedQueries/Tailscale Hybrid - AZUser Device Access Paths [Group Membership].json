@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Hybrid - AZUser Device Access Paths [Group Membership]",
+  "description": "Map AZUser to group-based Tailscale device access through ACL and grant rules",
+  "query": "MATCH p=(az:AZUser)-[:TS_AZUserSyncedToUser]->(u:TS_User)-[:TS_IsMemberOf]->(s)-[:TS_AclSource|TS_GrantSource]->(r)-[:TS_AclTargetsDevice|TS_GrantTargetsDevice]->(d)\nRETURN p"
+}

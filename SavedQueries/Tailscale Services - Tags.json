@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Services - Tags",
+  "description": "Show services linked to tags",
+  "query": "MATCH p=(s:TS_Service)-[:TS_ServiceHasTag]->(t:TS_Tag) RETURN p"
+}

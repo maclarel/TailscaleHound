@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH Rules - Targets Devices",
+  "description": "Show SSH rules linked directly to explicitly targeted devices",
+  "query": "MATCH p=(s:TS_SSHRule)-[:TS_SSHRuleTargetsDevice]->(d) RETURN p"
+}

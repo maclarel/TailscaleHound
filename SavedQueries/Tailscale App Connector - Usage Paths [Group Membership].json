@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale App Connector - Usage Paths [Group Membership]",
+  "description": "Show group membership access paths to app connectors through ACLs or grants",
+  "query": "MATCH p=(u:TS_User)-[:TS_IsMemberOf]->(s)-[:TS_AclSource|TS_GrantSource]->(r)-[:TS_AclTargetsAppConnector|TS_GrantTargetsAppConnector]->(app:TS_AppConnector)\nRETURN p"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Group To Default Posture",
+  "description": "Show group-based grants that inherit default source posture",
+  "query": "MATCH path=(u:TS_User)-[:TS_IsMemberOf]->(g:TS_Group)-[:TS_GrantSource]->(gr:TS_Grant)-[:TS_UsesDefaultSrcPosture]->(d:TS_DefaultSrcPosture)-[:TS_DefaultSrcPostureIncludes]->(post:TS_Posture) RETURN path"
+}

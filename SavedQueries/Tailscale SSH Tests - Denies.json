@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH Tests - Denies",
+  "description": "Show denied SSH users from SSH tests",
+  "query": "MATCH p=(t:TS_SSHTest)-[:TS_SSHTestDeniesUser]->(u) RETURN p"
+}

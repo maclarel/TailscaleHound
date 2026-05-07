@@ -1,0 +1,5 @@
+{
+  "query": "MATCH path=(u:TS_User)-[:TS_IsMemberOf]->(g:TS_Group)-[:TS_AclSource|TS_GrantSource]->(r)-[:TS_AclUsesPort|TS_GrantUsesPort]->(port:TS_PortSpec)\nRETURN path",
+  "name": "Tailscale Access - Group Port Access",
+  "description": "Show group membership paths to port specs through ACL and grant rules"
+}

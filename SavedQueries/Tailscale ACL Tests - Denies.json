@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL Tests - Denies",
+  "description": "Show denied targets from ACL tests",
+  "query": "MATCH p=(t:TS_ACLTest)-[:TS_ACLTestDenies|TS_ACLTestDeniesDevice|TS_ACLTestDeniesPort]->() RETURN p"
+}

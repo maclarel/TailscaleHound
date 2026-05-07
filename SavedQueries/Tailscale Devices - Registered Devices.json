@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Devices - Registered Devices",
+  "description": "Show Tailscale users and external users linked to the devices they registered",
+  "query": "MATCH p=(u)-[:TS_RegisteredDevice]->(d)\nWHERE (u:TS_User OR u:TS_ExternalUser)\n  AND (d:TS_Device OR d:TS_ExternalDevice)\nRETURN p"
+}

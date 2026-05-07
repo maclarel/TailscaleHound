@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Network - External Device Tags",
+  "description": "Show tags observed on devices shared from external tailnets without treating them as local policy tags",
+  "query": "MATCH p=(d:TS_ExternalDevice)-[:TS_HasExternalTag]->(t:TS_ExternalTag)\nRETURN p"
+}

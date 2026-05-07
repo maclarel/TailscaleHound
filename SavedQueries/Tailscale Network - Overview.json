@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_Network) return p",
+  "name": "Tailscale Network - Overview",
+  "description": "Get tailscale network "
+}

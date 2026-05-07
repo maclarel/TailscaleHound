@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL - Node Attributes",
+  "description": "List node attribute rules from ACL policy",
+  "query": "MATCH (n:TS_NodeAttr) RETURN n"
+}

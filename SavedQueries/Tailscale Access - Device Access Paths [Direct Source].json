@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_User)-[:TS_AclSource|TS_GrantSource]->(r)-[:TS_AclTargetsDevice|TS_GrantTargetsDevice]->(d)\nRETURN p",
+  "name": "Tailscale Access - Device Access Paths [Direct Source]",
+  "description": "Show direct user access paths to devices through ACL and grant rules"
+}

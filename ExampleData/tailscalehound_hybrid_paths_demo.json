@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "source_kind": null,
+    "collector": "TailscaleHound",
+    "demo": "onepiece",
+    "description": "Sanitized AzureHound to TailscaleHound bridge data for saved query examples."
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "d9644cf7-8340-4616-aca0-b6057f83412d",
+        "kinds": [
+          "AZUser"
+        ],
+        "properties": {
+          "name": "MONKEY.D.LUFFY@STRAW-HAT.LOCAL",
+          "displayName": "Monkey D. Luffy",
+          "userPrincipalName": "monkey.d.luffy@straw-hat.local"
+        }
+      },
+      {
+        "id": "onepiece_ts-user_monkey-d-luffy",
+        "kinds": [
+          "TS_User"
+        ],
+        "properties": {
+          "name": "Monkey D. Luffy",
+          "userPrincipalName": "monkey.d.luffy@straw-hat.local"
+        }
+      },
+      {
+        "id": "b2e1c118-65b8-4d34-acc6-263a95bdd4e6",
+        "kinds": [
+          "AZUser"
+        ],
+        "properties": {
+          "name": "NAMI@STRAW-HAT.LOCAL",
+          "displayName": "Nami",
+          "userPrincipalName": "nami@straw-hat.local"
+        }
+      },
+      {
+        "id": "onepiece_ts-user_nami",
+        "kinds": [
+          "TS_User"
+        ],
+        "properties": {
+          "name": "Nami",
+          "userPrincipalName": "nami@straw-hat.local"
+        }
+      },
+      {
+        "id": "07a49d10-769d-4618-9131-3cf36767e1d4",
+        "kinds": [
+          "AZUser"
+        ],
+        "properties": {
+          "name": "RORONOA.ZORO@STRAW-HAT.LOCAL",
+          "displayName": "Roronoa Zoro",
+          "userPrincipalName": "roronoa.zoro@straw-hat.local"
+        }
+      },
+      {
+        "id": "onepiece_ts-user_roronoa-zoro",
+        "kinds": [
+          "TS_User"
+        ],
+        "properties": {
+          "name": "Roronoa Zoro",
+          "userPrincipalName": "roronoa.zoro@straw-hat.local"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "kind": "TS_AZUserSyncedToUser",
+        "start": {
+          "value": "d9644cf7-8340-4616-aca0-b6057f83412d",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-user_monkey-d-luffy",
+          "match_by": "id"
+        },
+        "properties": {
+          "MatchField": "LoginName",
+          "MatchValue": "monkey.d.luffy@straw-hat.local"
+        }
+      },
+      {
+        "kind": "TS_AZUserSyncedToUser",
+        "start": {
+          "value": "b2e1c118-65b8-4d34-acc6-263a95bdd4e6",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-user_nami",
+          "match_by": "id"
+        },
+        "properties": {
+          "MatchField": "LoginName",
+          "MatchValue": "nami@straw-hat.local"
+        }
+      },
+      {
+        "kind": "TS_AZUserSyncedToUser",
+        "start": {
+          "value": "07a49d10-769d-4618-9131-3cf36767e1d4",
+          "match_by": "id"
+        },
+        "end": {
+          "value": "onepiece_ts-user_roronoa-zoro",
+          "match_by": "id"
+        },
+        "properties": {
+          "MatchField": "LoginName",
+          "MatchValue": "roronoa.zoro@straw-hat.local"
+        }
+      }
+    ]
+  }
+}

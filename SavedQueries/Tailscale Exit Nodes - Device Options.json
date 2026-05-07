@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Exit Nodes - Device Options",
+  "description": "List devices currently marked as exit-node options in Tailscale telemetry",
+  "query": "MATCH (d:TS_Device {ExitNodeOption: true}) RETURN d"
+}

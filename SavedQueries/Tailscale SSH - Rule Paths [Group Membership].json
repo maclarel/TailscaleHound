@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH - Rule Paths [Group Membership]",
+  "description": "Show group-based users that can SSH to explicitly targeted devices through Tailscale SSH rules",
+  "query": "MATCH p=(u:TS_User)-[:TS_IsMemberOf]->(s)-[:TS_SSHRuleSource]->(r:TS_SSHRule)-[:TS_SSHRuleTargetsDevice]->(d:TS_Device)\nRETURN p"
+}

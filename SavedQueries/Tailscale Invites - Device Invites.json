@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Invites - Device Invites",
+  "description": "Show device invite relationships (tailnet, sender, and target device)",
+  "query": "MATCH p=()-[:TS_HasDeviceInvite|TS_UserSentDeviceInvite|TS_InvitesToDevice]->() RETURN p"
+}

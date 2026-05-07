@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACL - Tests",
+  "description": "Get ACL test cases from the policy",
+  "query": "MATCH (t:TS_ACLTest) RETURN t"
+}

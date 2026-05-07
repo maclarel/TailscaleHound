@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Auto Approvers - Route Approvers",
+  "description": "Show who can auto-approve routes",
+  "query": "MATCH p=(t:TS_Network)-[:TS_HasAutoApproverRoute]->(a:TS_AutoApproverRoute)-[:TS_AutoApproverIncludes]->(s) RETURN p"
+}

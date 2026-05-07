@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Services - Relationships",
+  "description": "Get service relationships",
+  "query": "MATCH p=()-[:TS_HasService]->() return p"
+}

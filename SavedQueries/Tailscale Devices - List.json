@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_Device) return p",
+  "name": "Tailscale Devices - List",
+  "description": "Get tailscale devices "
+}

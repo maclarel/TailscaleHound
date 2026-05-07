@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Posture - Uses Default",
+  "description": "Show rules that rely on default source posture",
+  "query": "MATCH a=((r)-[:TS_UsesDefaultSrcPosture]->(d:TS_DefaultSrcPosture)) RETURN a"
+}

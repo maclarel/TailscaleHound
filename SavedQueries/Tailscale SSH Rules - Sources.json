@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH Rules - Sources",
+  "description": "Show source selectors attached to SSH rules",
+  "query": "MATCH p=()-[:TS_SSHRuleSource]->(s:TS_SSHRule) RETURN p"
+}

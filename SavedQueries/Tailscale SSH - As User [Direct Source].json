@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale SSH - As User [Direct Source]",
+  "description": "Direct users that can SSH to explicitly targeted devices as a specific SSH user through SSH rules",
+  "query": "MATCH p1=(u:TS_User)-[:TS_SSHRuleSource]->(r:TS_SSHRule)-[:TS_SSHRuleTargetsDevice]->(d:TS_Device)\nMATCH p2=(r)-[:TS_SSHRuleAllowsUser]->(ssh:TS_SSHUser)\nRETURN p1, p2"
+}

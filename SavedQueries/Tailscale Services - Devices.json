@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Services - Devices",
+  "description": "Show services linked to devices",
+  "query": "MATCH p=(s:TS_Service)-[:TS_ServiceRunsOn]->(d) RETURN p"
+}

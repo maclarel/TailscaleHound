@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Network - External User Devices",
+  "description": "Show external users through their registered external devices and external tailnets",
+  "query": "MATCH p=(u:TS_ExternalUser)-[:TS_RegisteredDevice]->(d:TS_ExternalDevice)-[:TS_InExternalTailnet]->(t:TS_ExternalTailnet)\nRETURN p"
+}

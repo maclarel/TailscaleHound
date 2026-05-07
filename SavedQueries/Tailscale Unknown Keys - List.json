@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Unknown Keys - List",
+  "description": "List tailnet keys with unclassified type",
+  "query": "MATCH (k:TS_UnknownKey) RETURN k"
+}

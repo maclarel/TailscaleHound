@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Posture - Default",
+  "description": "Show default source posture configuration",
+  "query": "MATCH a=((t:TS_Network)-[:TS_HasDefaultSrcPosture]->(d:TS_DefaultSrcPosture)-[:TS_DefaultSrcPostureIncludes]->(p:TS_Posture)) RETURN a"
+}

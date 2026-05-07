@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale ACLs - Targets Exit Nodes",
+  "description": "Show ACL rules linked to exit-node-capable devices",
+  "query": "MATCH p=(a:TS_ACL)-[:TS_AclTargetsExitNode]->(d:TS_Device) RETURN p"
+}

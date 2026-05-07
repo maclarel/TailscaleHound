@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Targets Routes",
+  "description": "Show grant rules linked to routes",
+  "query": "MATCH p=(g:TS_Grant)-[:TS_GrantTargetsRoute]->(r:TS_Route) RETURN p"
+}

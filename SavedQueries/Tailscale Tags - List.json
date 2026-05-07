@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Tags - List",
+  "description": "List all Tailscale tags from ACL policy",
+  "query": "MATCH (t:TS_Tag) RETURN t"
+}

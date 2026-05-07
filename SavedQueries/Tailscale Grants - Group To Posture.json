@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Grants - Group To Posture",
+  "description": "Show group-based grants that require device posture",
+  "query": "MATCH path=(u:TS_User)-[:TS_IsMemberOf]->(g:TS_Group)-[:TS_GrantSource]->(gr:TS_Grant)-[:TS_RequiresPosture]->(post:TS_Posture) RETURN path"
+}

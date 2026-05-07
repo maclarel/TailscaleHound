@@ -1,0 +1,5 @@
+{
+  "query": "MATCH p=(u:TS_User)-[:TS_AclSource|TS_GrantSource]->(r)-[:TS_AclTargetsExitNode|TS_GrantTargetsExitNode]->(d:TS_Device)\nRETURN p",
+  "name": "Tailscale Exit Nodes - Policy Paths [Direct Source]",
+  "description": "Show direct user paths to exit nodes through ACL or grant rules"
+}

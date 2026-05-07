@@ -1,0 +1,5 @@
+{
+  "name": "Tailscale Auto Approvers - Exit Nodes",
+  "description": "Show exit node auto-approver selectors",
+  "query": "MATCH p=(t:TS_Network)-[:TS_HasAutoApproverExitNode]->(a:TS_AutoApproverExitNode)-[:TS_AutoApproverIncludes]->(s) RETURN p"
+}
