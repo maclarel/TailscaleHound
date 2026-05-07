@@ -9,6 +9,8 @@ MATCH p=(u:TS_User)-[:TS_IsMemberOf]->(s)-[:TS_AclSource|TS_GrantSource]->(r)-[:
 RETURN p
 ```
 
+Thank you to [@Sw4mpf0x](https://github.com/Sw4mpf0x) for helping create this tool and the inspiration: https://specterops.io/blog/2026/03/12/leveraging-tailscale-keys/
+
 ## Features
 
 - Remote collection through the Tailscale API.
