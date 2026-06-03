@@ -125,7 +125,10 @@ def _bh_login(base_url: str, username: str, secret: str, timeout: int, verify: b
         logger.debug(f"POST {api_url}")
         resp = requests.post(api_url, json=body, timeout=timeout, verify=verify)
         logger.debug(f"Status: {resp.status_code}")
-        if not (200 <= resp.status_code < 300):
+        if resp.status_code >= 400:
+            logger.warning(
+                f"BloodHound login failed: HTTP {resp.status_code}."
+            )
             if resp.text:
                 logger.debug(f"Body: {resp.text}")
             return None
@@ -252,7 +255,8 @@ def _query_bh_nodes(
         logger.debug(f"Status: {resp.status_code}")
         if resp.text:
             logger.debug(f"Body: {resp.text[:200]}...")
-        if not (200 <= resp.status_code < 300):
+        if resp.status_code >= 400:
+            logger.warning(f"BloodHound {kind} query failed: HTTP {resp.status_code}.")
             return []
         payload = resp.json()
     except requests.exceptions.RequestException as e:
@@ -513,6 +517,7 @@ def _load_access_policy_file(path: str, logger: logging.Logger) -> Optional[dict
 def _run_hybrid_windows(args, logger: logging.Logger) -> int:
     token = _bh_login(args.bh_url, args.bh_user, args.bh_password, timeout=30, verify=not args.insecure, logger=logger)
     if not token:
+        logger.warning("Aborting hybrid mapping: BloodHound login did not return a session token.")
         return 1
     az_nodes = _query_azusers(args.bh_url, token, timeout=30, verify=not args.insecure, logger=logger)
     logger.info(f"Retrieved {len(az_nodes)} AZUser nodes")
