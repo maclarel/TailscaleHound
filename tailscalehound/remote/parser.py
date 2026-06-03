@@ -452,7 +452,10 @@ class RemoteParser:
             self.logger.debug(f"Status: {resp.status_code}")
             if resp.text:
                 self.logger.debug(f"Body: {resp.text}")
-            if not (200 <= resp.status_code < 300):
+            if resp.status_code >= 400:
+                self.logger.warning(
+                    f"Tailscale API request failed: HTTP {resp.status_code} on {path.lstrip('/')}."
+                )
                 return None
             return resp.json()
         except requests.exceptions.RequestException as e:
@@ -1289,7 +1292,10 @@ class RemoteParser:
             self.logger.debug(f"Status: {resp.status_code}")
             if resp.text:
                 self.logger.debug(f"Body: {resp.text}")
-            if not (200 <= resp.status_code < 300):
+            if resp.status_code >= 400:
+                self.logger.warning(
+                    f"Tailscale ACL policy request failed: HTTP {resp.status_code}."
+                )
                 return None
             try:
                 self._acl_policy_cache = resp.json()
